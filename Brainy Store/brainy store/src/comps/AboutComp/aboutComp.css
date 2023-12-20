@@ -1,0 +1,33 @@
+.aboutcomp{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 352px;
+    width: 100%;
+
+} 
+.rev {
+    flex-direction: row-reverse;
+    
+}
+.rev .about-text{
+    translate: 30% 0%;
+    text-wrap: wrap;
+}
+.about-text{
+    translate: 0% -34%;
+}
+.about-text p{
+    color: #000;
+font-family: Ubuntu;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-wrap: wrap;
+}
+.aboutcomp img{
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+}

@@ -1,0 +1,46 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    translate: 0% -20%;
+    margin-inline: 29px;
+
+}
+.search input{
+    width: 450px;
+height: 50px;
+    border-radius: 15px;
+background: rgba(224, 224, 224, 0.50);
+box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.10);
+text-indent: 42px;
+border: none;
+}
+.search{
+    display: flex;
+}
+.search img{
+    translate: 128% 0%;
+}
+.sign{
+    display: flex;
+
+}
+.sign button{
+    background: #FFF;
+    border: none;
+    margin-inline: 5px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.10);
+    display: flex;
+    width: 150px;
+    height: 50px;
+    padding: 15px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.sign button:last-child{
+    background: #A4CA39;
+}

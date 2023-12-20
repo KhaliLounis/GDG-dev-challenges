@@ -1,0 +1,53 @@
+.hero {
+    display: flex;
+    background: url('../assets/bg.png'), lightgray 0% 0% / 100px 100px repeat, rgba(255, 255, 255, 0.00);
+}
+
+
+.brainy-image{
+    margin-right: 70px;
+
+}
+.landing{
+    padding-block: 1px;
+}
+.landing h1{
+    color: #000;
+font-family: Ubuntu;
+font-size: 64px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-bottom: 1px;
+}
+.landing p{
+    color: #000;
+font-family: Ubuntu;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-top: 1px;
+margin-bottom: 25px;
+}
+.landing button {
+    border-radius: 15px;
+background: #A4CA39;
+box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.10);
+display: flex;
+width: 200px;
+height: 66px;
+padding: 15px 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border: none;
+color: #FFF;
+text-align: center;
+font-family: Ubuntu;
+font-size: 19px;
+font-style: normal;
+font-weight: 500;
+line-height: 105.263%; /* 20px */
+}
