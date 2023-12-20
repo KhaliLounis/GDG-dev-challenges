@@ -5,7 +5,6 @@ import { about } from './aboutData'
 const About = () => {
 
   return (
-    <div className='flex'>
 
       <div className='about'>
         <h1 className='us'>About us</h1>
@@ -15,7 +14,7 @@ const About = () => {
           }
       
       </div>
-    </div>
+    
   )
 }
 

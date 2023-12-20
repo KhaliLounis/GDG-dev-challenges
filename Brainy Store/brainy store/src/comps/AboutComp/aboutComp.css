@@ -25,9 +25,13 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 text-wrap: wrap;
+white-space: pre-line,
 }
 .aboutcomp img{
     border-radius: 15px;
     width: 150px;
     height: 150px;
+}
+.about-text span{
+    font-size: 40px;
 }
