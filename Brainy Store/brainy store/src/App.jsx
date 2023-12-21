@@ -6,8 +6,11 @@ import Navbar from './comps/Navbar/Navbar'
 import Products from './sections/Products/Products'
 import Reviews from './sections/Reviews/Reviews'
 import Footer from './comps/Footer/Footer'
+import Cart from './sections/Cart/Cart'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-const App = () => {
+
+const Layout = () => {
   return (
     <div>
         <Navbar/>
@@ -17,6 +20,22 @@ const App = () => {
         <Reviews/>
         <Footer/>
     </div>
+  )
+}
+
+
+
+const App = () => {
+  return (
+
+
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Layout />} />
+                <Route path="cart" element={<Cart />} />
+            </Routes>
+        </BrowserRouter>
+
   )
 }
 

@@ -3,6 +3,9 @@ import './navbar.css'
 import cart from '../../assets/cart.svg'
 import heart from '../../assets/heart.svg'
 import search from '../../assets/search.svg'
+import {Link} from 'react-router-dom'
+import Cart from '../../sections/Cart/Cart'
+
 
 const Navbar = () => {
   return (
@@ -20,7 +23,7 @@ const Navbar = () => {
       </div>
       <div className='icons'>
         <img src={heart} alt="heart" />
-        <img src={cart} alt="cart" />
+        <Link to="/cart"><img src={cart} alt="cart" /> </Link> 
       </div>
     </div>
   )

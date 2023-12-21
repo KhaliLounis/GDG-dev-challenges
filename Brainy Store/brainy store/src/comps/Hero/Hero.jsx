@@ -1,7 +1,6 @@
 import React from 'react'
 import './hero.css'
 import brainy from '../../assets/brainy.png'
-
 const Hero = () => {
   return (
     <div className='hero'>
