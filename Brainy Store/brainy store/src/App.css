@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Karla:wght@500;700&family=Pacifico&family=Reem+Kufi+Ink&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Karla:wght@500;700&family=Pacifico&family=Reem+Kufi+Ink&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&family=Ubuntu:wght@500;700&display=swap');
 body{
@@ -12,4 +14,108 @@ body{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.card__title {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+}
+.card__container {
+  display: grid;
+  grid-template-columns: repeat(4, 0.1fr);
+  gap: 10px;
+  align-self: center;
+  font-family: "Ubuntu", sans-serif;
+  align-items: center;
+  justify-content: center;
+  margin-block: 50px;
+  row-gap: 35px;
+}
+
+.card {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 142px;
+  height: 202px;
+  flex-direction: column;
+  border-radius: 16px;
+  padding: 0.7rem;
+}
+
+.card__img {
+  border: 1px solid #00000050;
+  border-radius: 16px;
+  width: 142px;
+  height: 170px;
+}
+
+.card__details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0.7rem;
+  font-weight: 400;
+}
+
+.card__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+}
+
+.card__buttons button {
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.25);
+ border-radius: 5px;
+ cursor: pointer;
+ 
+}
+
+.card__buttons button:first-child {
+  background-color: #a4ca39;
+}
+
+.card__buttons button:nth-child(2) {
+  background-color: #fff;
+}
+.active__heart {
+  color: #ff6f61;
+  
+}
+
+.inactive__heart {
+  color: #fff;
+}
+
+.rev_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rev_card {
+  width: 345px;
+  height: 120px;
+  background-color: rgb(238, 220, 130, 50%);
+  margin-inline: 48px;
+  border-radius: 15px;
+  padding: 18px 29px 18px 29px;
+  font-weight: 400;
+}
+
+.rev_card h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 20px;
+}
+
+.rev_card p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
 }

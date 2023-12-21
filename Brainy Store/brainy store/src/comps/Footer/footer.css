@@ -1,0 +1,25 @@
+.footer__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    background: #1A1A1A;
+    width: 100%;
+    margin-top: 60px;
+    
+}
+.img{
+margin-top: 10px;
+ display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer h1{
+    text-align: center;
+    color: #F5F5F5;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}

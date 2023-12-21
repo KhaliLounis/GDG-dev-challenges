@@ -1,12 +1,18 @@
-import React from 'react'
-import './reviews.css'
+import React from "react";
+import { rev } from "./reviewsData";
+import Review from "../Review/Review";
 
-const Reviews = () => {
+function Reviews() {
   return (
-    <div>
-      
-    </div>
-  )
+    <>
+      <h1 className="card__title">Reviews</h1>
+      <div className="rev_container">
+        {rev.map((item, index) => (
+          <Review key={index} index={index} title={item.title} paragraph={item.paragraph} />
+        ))}
+      </div>
+    </>
+  );
 }
 
-export default Reviews
+export default Reviews;
