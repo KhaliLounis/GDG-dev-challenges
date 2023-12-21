@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import AboutComp from '../AboutComp/AboutComp'
+import AboutComp from '../../comps/AboutComp/AboutComp'
 import { about } from './aboutData'
 const About = () => {
 

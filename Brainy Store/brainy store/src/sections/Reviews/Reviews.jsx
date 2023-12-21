@@ -1,6 +1,6 @@
 import React from "react";
 import { rev } from "./reviewsData";
-import Review from "../Review/Review";
+import Review from "../../comps/Review/Review";
 
 function Reviews() {
   return (

@@ -11,7 +11,7 @@ const Hero = () => {
       <div className='landing'>
         <h1>Welcome to <span className='brainy'>Brainy</span> Store</h1>
         <p>your ultimate destination for swag items</p>
-        <button>Discover Products</button>
+        <a href="#products">Discover Products</a>
       </div>
     </div>
   )

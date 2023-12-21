@@ -29,7 +29,7 @@ const Product = ({index,img,price}) => {
         </div>
 
         <div className="card__buttons">
-          <button>Purchase</button>
+          <button>Add to cart</button>
           <button>Hide</button>
         </div>
     </div>

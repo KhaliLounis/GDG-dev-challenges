@@ -43,3 +43,6 @@ border: none;
 .sign button:last-child{
     background: #A4CA39;
 }
+.icons img{
+    cursor: pointer;
+}
