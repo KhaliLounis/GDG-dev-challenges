@@ -10,6 +10,7 @@ body{
 html {
     scroll-behavior: smooth;
   }
+
 .brainy{
     color: #000;
     font-family: Pacifico;
@@ -91,10 +92,6 @@ html {
 .active__heart {
   color: #ff6f61;
   
-}
-
-.inactive__heart {
-  color: #fff;
 }
 
 .rev_container {

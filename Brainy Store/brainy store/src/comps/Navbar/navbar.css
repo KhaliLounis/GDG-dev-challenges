@@ -25,6 +25,12 @@ border: none;
 
 }
 .sign button{
+    color: #000;
+font-family: Ubuntu;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
     background: #FFF;
     border: none;
     margin-inline: 5px;
@@ -44,5 +50,9 @@ border: none;
     background: #A4CA39;
 }
 .icons img{
+    margin-inline: 5px;
     cursor: pointer;
+}
+.nav-link{
+    text-decoration: none;
 }

@@ -4,7 +4,7 @@ import data from './data.json'
 import Product from "../../comps/Product/Product";
 
 function Products() {
-
+  
   return (
     <>
       <h1 className="card__title" id="products">Products</h1>

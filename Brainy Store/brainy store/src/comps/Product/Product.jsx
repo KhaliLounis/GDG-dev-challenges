@@ -1,11 +1,38 @@
 import React, { useState } from 'react'
 import './product.css'
 import { FaRegHeart,FaHeart } from "react-icons/fa";
+import { useCart } from '../../Context';
+import Data from '../../sections/Products/data.json'
+
 
 const Product = ({index,img,price}) => {
+  const {carting} = useCart();
+  const {cart,setCart} = carting;
+  const {dataArray} = useCart();
+  const {data,setData} = dataArray;
+  const [like, setLike] = useState(data.find((item) => item.Price === price).Liked);
   
-  const [like, setLike] = useState(false);
-
+  const handleLikeClick = () => {
+    setData(data.map((item)=>{
+      if(item.Price===price){
+        return{
+          ...item,
+          Liked: !item.Liked
+        }
+      }
+      return item
+    }))
+    setCart(cart.map((item)=>{
+      if(item.Price===price){
+        return{
+          ...item,
+          Liked: !item.Liked
+        }
+      }
+      return item
+    }))
+    setLike((prevLike) => !prevLike);
+  };
   return (
     <div key={index} className="card">
         <img src={img} alt="" className="card__img" />
@@ -15,25 +42,27 @@ const Product = ({index,img,price}) => {
           <FaRegHeart
             style={{ cursor:"pointer" }}
             className={`like ${like && "active__heart"}`}
-            onClick={() => {
-              setLike(!like);
-            }}
+            onClick={handleLikeClick}
           /> :
           <FaHeart
             style={{ cursor:"pointer" }}
             className={`like ${like && "active__heart"}`}
-            onClick={() => {
-              setLike(!like);
-            }}/>}
+            onClick={handleLikeClick}/>}
 
         </div>
 
         <div className="card__buttons">
-          <button>Add to cart</button>
+          <button onClick={()=> setCart([...cart, {
+            Image: img,
+            Price: price,
+            Liked: like
+          }])
+          }>Add to cart</button>
           <button>Hide</button>
         </div>
     </div>
   )
+  
 }
 
 export default Product

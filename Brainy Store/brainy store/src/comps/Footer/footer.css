@@ -4,6 +4,7 @@
     align-items: center;
 }
 .footer{
+    bottom: 0;
     background: #1A1A1A;
     width: 100%;
     margin-top: 60px;

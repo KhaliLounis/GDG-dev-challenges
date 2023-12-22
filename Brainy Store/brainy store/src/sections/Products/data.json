@@ -2,34 +2,42 @@
     
     {
       "Image": "https://img.freepik.com/premium-psd/garment-dyed-sweatshirt-realistic-mockup_586390-201.jpg?w=740",
-      "Price": 10.99
+      "Liked":false,
+      "Price": 1.99
     },
     {
       "Image": "https://img.freepik.com/premium-psd/garment-dyed-sweatshirt-realistic-mockup_586390-201.jpg?w=740",
-      "Price": 10.99
+      "Liked":false,
+      "Price": 2.99
     },
     {
       "Image": "https://img.freepik.com/premium-psd/garment-dyed-sweatshirt-realistic-mockup_586390-201.jpg?w=740",
-      "Price": 10.99
+      "Liked":false,
+      "Price": 3.99
     },
     {
       "Image": "https://img.freepik.com/premium-psd/garment-dyed-sweatshirt-realistic-mockup_586390-201.jpg?w=740",
-      "Price": 10.99
+      "Liked":false,
+      "Price": 4.99
     },
     {
       "Image": "https://img.freepik.com/premium-psd/garment-dyed-sweatshirt-realistic-mockup_586390-201.jpg?w=740",
-      "Price": 10.99
+      "Liked":false,
+      "Price": 5.99
     },
     {
       "Image": "https://img.freepik.com/premium-psd/garment-dyed-sweatshirt-realistic-mockup_586390-201.jpg?w=740",
-      "Price": 10.99
+      "Liked":false,
+      "Price": 6.99
     },
     {
       "Image": "https://img.freepik.com/premium-psd/garment-dyed-sweatshirt-realistic-mockup_586390-201.jpg?w=740",
-      "Price": 10.99
+      "Liked":false,
+      "Price": 7.99
     },
     {
       "Image": "https://img.freepik.com/premium-psd/garment-dyed-sweatshirt-realistic-mockup_586390-201.jpg?w=740",
-      "Price": 10.99
+      "Liked":false,
+      "Price": 8.99
     }
   ]

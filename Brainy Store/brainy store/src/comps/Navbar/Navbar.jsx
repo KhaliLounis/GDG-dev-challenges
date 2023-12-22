@@ -10,9 +10,7 @@ import Cart from '../../sections/Cart/Cart'
 const Navbar = () => {
   return (
     <div className='navbar'>
-      <div className='logo'>
-        <h1 className='brainy'>Brainy</h1>
-      </div>
+      <Link to='/' className='nav-link'><h1 className='brainy'>Brainy</h1></Link>
       <div className='search'>
         <img src={search} alt={search} />
         <input type="text" placeholder='Search for products' />
