@@ -10,18 +10,8 @@ import { FaShoppingCart } from "react-icons/fa";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <NavLink
-        to="/"
-        className="nav-link brainy"
-        style={({ isActive }) => {
-          if (isActive) {
-            return { color: "#A4CA39" };
-          }
-        }}
-      >
-        {" "}
+
         <h1 className="brainy">Brainy</h1>{" "}
-      </NavLink>
       <div className="search">
         <img src={search} alt={search} />
         <input type="text" placeholder="Search for products" />
