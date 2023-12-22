@@ -35,7 +35,7 @@ line-height: normal;
     border: none;
     margin-inline: 5px;
     border-radius: 15px;
-    box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.25);
     display: flex;
     width: 150px;
     height: 50px;
@@ -49,10 +49,17 @@ line-height: normal;
 .sign button:last-child{
     background: #A4CA39;
 }
-.icons img{
-    margin-inline: 5px;
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons .img, .icons img{
+    margin-inline: 10px;
     cursor: pointer;
 }
+
+
 .nav-link{
     text-decoration: none;
 }

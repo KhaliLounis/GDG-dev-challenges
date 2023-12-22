@@ -15,6 +15,7 @@ function Products() {
             index={index}
             img={item.Image}
             price={item.Price}
+            name={item.Name}
           />
         ))}
       </div>

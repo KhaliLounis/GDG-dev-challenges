@@ -1,22 +1,36 @@
 .cart{
-    translate: 0 -20%;
-    line-height: 0.5px;
+    translate: 0 -10%;
+    /* height: 750px; */
 }
 .cart-buttons{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
+.cart h1{
+    line-height: 50px;
 
+}
+.cart p{
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0;
+    margin-top: 1px;
+    margin-bottom: 25px;
+}
 .purchase{
     display: flex;
     align-items:center ;
 }
+
 .cart-buttons button{
     cursor: pointer;
     border-radius: 10px;
 background: #A4CA39;
-box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.10);
+box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.25);
 display: flex;
 width: 130px;
 height: 50px;
@@ -26,7 +40,7 @@ align-items: center;
 gap: 10px;
 flex-shrink: 0;
 border: none;
-color: #FFF;
+color: #fff;
 text-align: center;
 font-family: Ubuntu;
 font-size: 19px;
@@ -42,4 +56,17 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 margin-left: 10px;
+text-align: center;
+}
+.cart-buttons p{
+    margin-top: 22px;
+}
+.cart-buttons button:nth-child(2){
+    color: black;
+    background-color: white;
+}
+
+.items{
+    margin-top: 100px;
+    margin-bottom: 30px;
 }

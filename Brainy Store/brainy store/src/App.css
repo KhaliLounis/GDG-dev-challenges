@@ -32,8 +32,8 @@ html {
   font-family: "Ubuntu", sans-serif;
   align-items: center;
   justify-content: center;
-  margin-block: 50px;
-  row-gap: 35px;
+  margin-block: 60px;
+  row-gap: 90px;
 }
 
 .card {
@@ -53,13 +53,22 @@ html {
   width: 142px;
   height: 170px;
 }
-
+.name{
+  translate: 0 -15%;
+  font-size: 24px;
+}
 .card__details {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  margin-top: 0.7rem;
   font-weight: 400;
+  margin-block: 0px;
+}
+.details{
+  display: flex;
+  justify-content: space-between;
+
+  translate: 0 -170%;
 }
 
 .card__buttons {
@@ -68,6 +77,7 @@ html {
   align-items: center;
   justify-content: center;
   font-weight: 400;
+  translate: 0 -35%;
 }
 
 .card__buttons button {

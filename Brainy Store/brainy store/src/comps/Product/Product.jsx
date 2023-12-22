@@ -3,7 +3,7 @@ import './product.css';
 import { FaRegHeart, FaHeart } from 'react-icons/fa';
 import { useCart } from '../../Context';
 
-const Product = ({ index, img, price }) => {
+const Product = ({ index, img, price, name }) => {
   const { carting } = useCart();
   const { cart, setCart } = carting;
   const { dataArray } = useCart();
@@ -41,7 +41,7 @@ const Product = ({ index, img, price }) => {
     const itemExists = cart.some((item) => item.Price === price);
 
     if (!itemExists) {
-      setCart([...cart, { Image: img, Price: price, Liked: like }]);
+      setCart([...cart, { Image: img, Price: price, Liked: like, Name: name }]);
     }
   };
 
@@ -49,20 +49,26 @@ const Product = ({ index, img, price }) => {
     <div key={index} className="card">
       <img src={img} alt="" className="card__img" />
       <div className="card__details">
-        <span className="card__price">{price}$</span>
-        {!like ? (
-          <FaRegHeart
-            style={{ cursor: 'pointer' }}
-            className={`like ${like && 'active__heart'}`}
-            onClick={handleLikeClick}
-          />
-        ) : (
-          <FaHeart
-            style={{ cursor: 'pointer' }}
-            className={`like ${like && 'active__heart'}`}
-            onClick={handleLikeClick}
-          />
-        )}
+        <div className='name'>
+          <p>{name}</p>
+        </div>
+        <div className='details'>
+
+          <span>{price}$</span>
+          {!like ? (
+            <FaRegHeart
+              style={{ cursor: 'pointer' }}
+              className={`${like && 'active__heart'}`}
+              onClick={handleLikeClick}
+            />
+          ) : (
+            <FaHeart
+              style={{ cursor: 'pointer' }}
+              className={`${like && 'active__heart'}`}
+              onClick={handleLikeClick}
+            />
+          )}
+        </div>
       </div>
 
       <div className="card__buttons">

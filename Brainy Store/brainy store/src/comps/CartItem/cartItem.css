@@ -1,0 +1,15 @@
+.card__detailss{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 400;
+    margin-top: 24px;
+
+}
+.detailss{
+    margin-top: 17px;
+}
+.name{
+    
+    font-size: 20px;
+}
