@@ -6,6 +6,9 @@
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
     translate: 0 -10%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-left: 40px;
 }
 
 
@@ -30,7 +33,7 @@ margin-bottom: 1px;
 font-family: Ubuntu;
 font-size: 24px;
 font-style: normal;
-font-weight: 500;
+font-weight: 400;
 line-height: normal;
 margin-top: 1px;
 margin-bottom: 25px;

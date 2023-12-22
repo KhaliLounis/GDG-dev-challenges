@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
     height: 352px;
     width: 100%;
 
@@ -15,7 +16,8 @@
     text-wrap: wrap;
 }
 .about-text{
-    translate: 0% -34%;
+    translate: 0% -18%;
+
 }
 .about-text p{
     color: #000;
