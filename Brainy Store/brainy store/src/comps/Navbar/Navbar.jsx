@@ -3,7 +3,7 @@ import "./navbar.css";
 import cart from "../../assets/cart.svg";
 import heart from "../../assets/heart.svg";
 import search from "../../assets/search.svg";
-import { NavLink } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 import Cart from "../../sections/Cart/Cart";
 import { FaShoppingCart } from "react-icons/fa";
 
@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
 
-        <h1 className="brainy">Brainy</h1>{" "}
+        <Link to='/' className="nav-link"><h1 className="brainy">Brainy</h1></Link>
       <div className="search">
         <img src={search} alt={search} />
         <input type="text" placeholder="Search for products" />
